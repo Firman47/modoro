@@ -1,0 +1,267 @@
+:root{
+	--dark1: #000000;
+	--dark2:#212121;
+	--dark3:#303030;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+body{
+	background: var(--dark1);
+	height: 100vh;
+
+}
+
+header{
+	width: 100%;
+	height:60px;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	background: var(--dark2);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 100%;
+}
+nav .logo{
+	display: flex;
+	align-items: center;
+}
+nav .right {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+nav .link, .cari, .login {
+	height: 100%;
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+nav a.active{
+	background: var(--dark3);
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+}
+nav a.active:hover{
+	opacity: .6;
+	transition: .3s;
+}
+nav a{
+	padding: 10px;
+}
+a:hover{
+	background: var(--dark3);
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	transition: .3s;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content{
+	display: flex;
+	width: 80%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.box{
+	display: block;
+
+}
+.box-header{
+	width: 100%;
+	height: ;
+	text-align: center;
+	background: var(--dark2);
+	color: white;
+	padding: 10px 0;
+	border-radius: 5px;
+	top: 0;
+	margin-bottom: 10px;
+}
+h1{
+	font-size: 28px;
+	font-weight:900;
+}
+.box-body  form{
+	width: 400px;
+	padding: 15px;
+	height: ;
+	background:var(--dark2);
+	border-radius: 5px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+
+}
+.box-body select, input{
+	width: 80% ;
+	padding: 10px ;
+	background: var(--dark3);
+	border:0;
+	border-radius: 5px;
+}
+.box-body input{
+	width: 76%;
+}
+.box-body  .input{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+.box-tbl{
+	width: 100%;
+	height: ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.box-tbl button{
+	width: 100%;
+	background: var(--dark3);
+	border: 0;
+	padding: 10px;
+	border-radius: 5px;
+}
+.box-tbl.selesai button{
+	background: var(--dark2);
+	font-size: 18px;
+}
+.time{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	gap: 10px;
+	border-radius: 5px;
+	background: var(--dark3);
+
+}
+.time button{
+	background: var(--dark2);
+}
+.time p{
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box.b-hasil{
+	background: none;
+	width: auto;
+	padding: 0;
+	padding-top: 5px;
+}
+
+.hasil{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	gap: 10px;
+}
+
+.hasil .timer,  .info{
+	width: 400px;
+	height: auto;
+	padding: 20px;
+	gap: 20px;
+	background:var(--dark2);
+	border-radius: 5px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+		display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.hasil .info-box{
+	display: flex;
+	gap: 10px;
+ }
+.hasil .info .input{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+}
+.hasil .input label{
+	align-self: start;
+	margin-bottom: 5px;
+}
+.hasil .input input{
+	width: 90%;
+}
+
+.home{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
+
+	place-items: center;
+	width: 100%;
+	height: 90%;
+	background: red;
+	padding: 0 10px;
+	padding-top: 80px;
+	gap: 10px;
+}
+.box-home{
+	width: 88%;
+	height: 90%;
+	padding: 15px;
+	padding-top: 10px;
+	background:var(--dark2);
+	border-radius: 5px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.home .value{
+	margin-top: 5px;
+	padding: 10px;
+	background: var(--dark3);
+	border-radius: 5px;
+}
+.home .value.one{
+	background: none;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0;
+}
+button, a{
+	cursor: pointer;
+}
+button:hover{
+	opacity: .6;
+	transition: .3s;
+}

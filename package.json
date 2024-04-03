@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "name": "ci-co-dev",
+  "description": "## What is CodeIgniter?",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.49"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
